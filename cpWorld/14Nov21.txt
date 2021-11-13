@@ -1,0 +1,46 @@
+/* By Raj Saxena */
+#include <bits/stdc++.h>
+using namespace std;
+#define ll              long long int
+#define vi              vector<ll> 
+#define eb              emplace_back 
+#define loop(s,e,i)     for(ll i=s; i<e; i++) 
+#define max(a,b)        ( a > b ? a : b )
+#define min(a,b)        ( a < b ? a : b )
+#define mp              make_pair
+#define ln              length()
+#define ff              first
+#define ss              second
+#define mod             1000000007
+#define fast_io         ios_base::sync_with_stdio(false);cin.tie(NULL)
+#define endl            '\n'
+
+void problem(){
+    int n;  cin>>n;
+    vi v(n);
+    loop(0 , n , i) cin>>v[i];
+    int od = 0;
+    for(auto x:v){
+        if(x%2==1)  od++;
+    }
+    int ans = 0;
+    if(od<=1){
+        cout<<0<<endl;
+    }
+    else{
+        cout<<od/2<<endl;
+    }
+}
+
+int main(){ 
+#ifndef ONLINE_JUDGE
+    freopen("ip.txt", "r", stdin); 
+    freopen("wt.txt", "w", stdout);
+#endif
+    fast_io;
+    ll n;   cin >> n;
+    loop(0 , n , i)
+        problem();
+    return 0;
+}
+
