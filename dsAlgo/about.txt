@@ -1,0 +1,1 @@
+This folder contain's the solution of Standard data structure algorithm programming question.
